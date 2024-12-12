@@ -5,7 +5,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 
-driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()))
+# driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()))
+driver = webdriver.Edge(service=Service("./edgedriver_win64/msedgedriver.exe"))
 
 driver.get("http://sga.leiteviana.com:8080")
 
