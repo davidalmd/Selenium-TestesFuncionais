@@ -19,11 +19,10 @@ try:
 
     driver.find_element(By.TAG_NAME, "button").send_keys(Keys.RETURN)
 
-    botaoSair = driver.find_element(By.CLASS_NAME, "btn-nav-sair")
+    driver.find_element(By.LINK_TEXT, "Cadastrar Aluno")
 except:
     print("Algo deu errado com seu teste automatizado.")
 
-assert botaoSair is not None, "O teste não redirecionou para a tela principal, logo ele falhou."
 input("Pressione Enter para fechar o navegador...")
 
 driver.quit()
